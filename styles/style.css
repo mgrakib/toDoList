@@ -8,3 +8,31 @@
     border-radius: 10px;
 }
 
+
+#date-scrill::-webkit-scrollbar{
+    height: 6px;
+    
+}
+
+::-webkit-scrollbar-thumb{
+    background-image: linear-gradient(#0575E6 , #021B79);
+    border-radius: 10px;
+}
+
+
+
+.task-display {
+   
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.task-display::before{
+    
+    content: '';
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid gray;
+    display: inline-block;
+}
