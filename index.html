@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="./assets/fav.jpg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/d64724f41e.js" crossorigin="anonymous"></script>
+    
+    <title>ToDo List for THE DUSK</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body class="bg-[#EBEEF5]">
+    
+    <section class="bg-[#F9FAFC]  mx-auto rounded-2xl p-5 max-w-[500px]">
+        <!-- header section  -->
+        <header >
+            <!-- nav section  -->
+                <div class="flex py-3 ">
+                <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                        <div class="w-[60px] rounded-full">
+                            <img src="./assets/avatar.avif" />
+                        </div>
+                    </label>
+                    <div class="ml-2">
+                        <p class=" text-gray-500">Hello</p>
+                        <h4 class=" font-bold">MG Rakib</h4> 
+                    </div>
+
+                    <div class="flex gap-2 ml-auto mr-1">
+                        <div class="w-[50px] h-[50px] rounded-full border border-gray-400 flex items-center justify-center"><i class="fa-solid fa-calendar-days"></i></div>
+                        <div class="w-[50px] h-[50px] rounded-full border border-gray-400 flex items-center justify-center"><i class="fa-regular fa-bell"></i></div>
+                    </div>
+
+                    
+                </div>
+            <!-- nav section end -->
+        </header>
+        <!-- header section end -->
+
+        <!-- main section start  -->
+        <main> 
+            <div>
+                <!-- progress count section  -->
+            <div class="flex justify-between ">
+                <p class="text-xl font-bold  text-gray-600">On Porgress <span class="text-gray-500 font-normal">(<span id="progress-count">12</span>)</span></p>
+                <div>
+                    <button class="text-[#3084FE]" id="view-more">view more</button>
+                </div>
+            </div>
+            <!-- progress count section end  -->
+
+            <!-- carousel start  -->
+            <div class="my-5 overflow-hidden relative rounded-xl">
+                <!-- card body  -->
+                <div class="p-4 bg-white rounded-lg w-full">
+                    <!-- card top section  -->
+                    <div class="flex justify-between border-b pb-4">
+                        <div>
+                            <p class="text-2xl font-semibold text-gray-500">Design UI ToDO App</p>
+                            <p class="text-gray-700">Firday, 08 July 2022</p>
+                        </div>
+
+                        <div class="bg-[#FFE8C8] w-[60px] h-[60px] rounded-full flex items-center justify-center text-[#c2893d] text-2xl">
+                            <i class="fa-solid fa-people-group"></i>
+                        </div>
+                    </div>
+                    <!-- card top section end  -->
+                    
+                    <!-- card details  -->
+                    <div class="pt-4">
+                        <p class="text-gray-500 text-xl">Description:</p>
+                        <p class="text-[16px] text-gray-700 font-semibold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis, dignissimos?..</p>
+
+                        <!-- card team and progress  -->
+                        <div class="flex justify-between items-center mt-4">
+                            <div>
+                                <p>Team: </p>
+                                <div class="flex">
+                                    <div class="w-[40px] h-[40px] rounded-full bg-gray-400 p-[2px]">
+                                        <img src="./assets/1.png" alt="" class="w-[300%]">
+                                    </div>
+
+                                     <div class="w-[40px] h-[40px] rounded-full bg-gray-400 p-[2px] -ml-4">
+                                        <img src="./assets/1.png" alt="" class="w-[300%]">
+                                    </div>
+
+                                   
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <p>Progress: </p>
+                                <div class="flex">
+                                    <div class=" flex items-center justify-center">
+                                        <div class="radial-progress text-[#89BD93]" style="--value:78; --size:1.5rem; --thickness: 3px;"></div>
+                                        <p class="ml-2">70%</p>
+                                    </div>
+
+                                    
+
+                                   
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- card details end  -->
+                </div>
+                <!-- card body end -->
+                <div class="w-[110%] h-[25px] bg-blue-500 absolute -bottom-4">
+                </div>
+
+            </div>
+            <!-- carousel end -->
+            </div>
+
+
+            <!-- completed task  -->
+            <div class="mt-16">
+                <!-- progress count section  -->
+            <div class="flex justify-between">
+                <p class="text-xl font-bold text-gray-600">Completed</p>
+                <div>
+                    <button class="text-[#3084FE]" id="view-more">view more</button>
+                </div>
+            </div>
+            <!-- progress count section end  -->
+
+            <!-- compleate card container start  -->
+            <div class="my-5 p-4 w-full max-h-[300px]  overflow-y-scroll">
+                <!-- card body  -->
+                <div class="p-4 rounded-lg bg-white mb-5 overflow-hidden relative">
+                        <!-- top section -->
+                        <div class="flex justify-between items-center pb-4 border-b">
+                            <div>
+                                <p class="text-gray-700 font-bold text-xl "><del>Meeting With Client</del></p>
+                                <p class="text-gray-500">Redesign Motion graphic...</p>
+                            </div>
+                            <div class="text-3xl text-blue-500">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                        </div>
+                        <!-- bottom section  -->
+                        <div class="flex justify-between items-center pt-4">
+                            <p class="text-gray-500">Today 11:25PM</p>
+
+                            <div>
+                                <div class="w-[25px] h-[25px] rounded-full">
+                                    <img src="./assets/1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="h-[110%] w-[10px] bg-blue-400 absolute top-0 -left-1">
+                            
+                        </div>
+                </div>
+                <!-- card body end -->
+
+                <!-- card body  -->
+                <div class="p-4 rounded-lg bg-white mb-5 overflow-hidden relative">
+                        <!-- top section -->
+                        <div class="flex justify-between items-center pb-4 border-b">
+                            <div>
+                                <p class="text-gray-700 font-bold text-xl "><del>Meeting With Client</del></p>
+                                <p class="text-gray-500">Redesign Motion graphic...</p>
+                            </div>
+                            <div class="text-3xl text-blue-500">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                        </div>
+                        <!-- bottom section  -->
+                        <div class="flex justify-between items-center pt-4">
+                            <p class="text-gray-500">Today 11:25PM</p>
+
+                            <div>
+                                <div class="w-[25px] h-[25px] rounded-full">
+                                    <img src="./assets/1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="h-[110%] w-[10px] bg-blue-400 absolute top-0 -left-1">
+                            
+                        </div>
+                </div>
+                <!-- card body end -->
+
+
+                <!-- card body  -->
+                <div class="p-4 rounded-lg bg-white mb-5 overflow-hidden relative">
+                        <!-- top section -->
+                        <div class="flex justify-between items-center pb-4 border-b">
+                            <div>
+                                <p class="text-gray-700 font-bold text-xl "><del>Meeting With Client</del></p>
+                                <p class="text-gray-500">Redesign Motion graphic...</p>
+                            </div>
+                            <div class="text-3xl text-blue-500">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                        </div>
+                        <!-- bottom section  -->
+                        <div class="flex justify-between items-center pt-4">
+                            <p class="text-gray-500">Today 11:25PM</p>
+
+                            <div>
+                                <div class="w-[25px] h-[25px] rounded-full">
+                                    <img src="./assets/1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="h-[110%] w-[10px] bg-blue-400 absolute top-0 -left-1">
+                            
+                        </div>
+                </div>
+                <!-- card body end -->
+
+            </div>
+             <!-- compleate card container start  -->
+
+
+             <!-- creat task  -->
+            <div class="relative">
+                <div class="absolute shadow-[0_-30px_30px_1px_rgba(0,0,0,.3)] z-30 w-full h-5">
+
+                </div>
+                <label for="my-modal-6" class="relative btn w-full border-0 bg-blue-500 hover:bg-blue-600 text-white z-50" > <i class="fa-solid fa-plus"></i>
+                    <span>Create Now</span></label>
+            </div>
+             <!-- creat task end -->
+            </div>
+
+
+            <!-- modal  -->
+            <!-- The button to open modal -->
+
+
+
+<input type="checkbox" id="my-modal-6" class="modal-toggle" />
+<div class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    
+            <div class="w-[35%] h-[6px] bg-gray-300 rounded-xl mx-auto">
+            </div>
+            <div class="py-7 border-b">
+                <h4 class="text-center text-3xl text-gray-700 font-bold">New Task ToDo</h4>
+            </div>
+
+            <div class="py-5">
+                <h3 class="text-gray-600 text-2xl font-bold">Add Task Name </h3>
+
+                <input type="text" placeholder="Add task name" class="input input-bordered bg-gray-100 w-full my-4" />
+
+                <h3 class="text-gray-600 text-2xl font-bold">Description</h3>
+
+                <div>
+                    <div class="form-control my-4 ">
+                    <textarea class="textarea textarea-bordered h-24 bg-gray-100" placeholder="Description"></textarea>
+                    </div>
+                </div>
+
+                
+                <!-- date  -->
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="">
+                        <h3 class="text-gray-600 text-2xl font-bold">Date</h3>
+
+                        <div class="form-control w-full my-4">
+                            <input type="date" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+                        </div>
+                       <div class="modal-action">
+                            <label for="my-modal-6" class="btn btn-outline w-full hover:bg-blue-600 hover:border-primary text-blue-500">Cancel</label>
+                        </div> 
+                    </div>
+
+
+                    <!-- time -->
+                     <div class="">
+                        <h3 class="text-gray-600 text-2xl font-bold">Time</h3>
+
+                        <div class="form-control w-full my-4">
+                            <input type="time" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+                        </div>
+                        <div class="modal-action">
+                            <label for="my-modal-6" class="btn btn-outline w-full border-0 bg-blue-500 hover:bg-blue-600 text-white">Create</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- modal  -->
+            <!-- The button to open modal -->
+  </div>
+</div>
+            
+        </main>
+        <!-- main section end -->
+    </section>
+
+<script src="https://cdn.tailwindcss.com"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
